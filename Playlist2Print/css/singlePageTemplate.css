@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 1025px) and (max-width: 10000px) {
+@media (min-width: 1120px) and (max-width: 10000px) {
 	/* Body */
 	body {
 		margin-top:    0px;
@@ -19,9 +19,8 @@
 		width:        90%;
 		margin-left:  auto;
 		margin-right: auto;
-		
-		background-color: #FFFFFF;
-	}
+			}
+	#fullcontainer {}
 
 	/* Header and Footer Text */
 	header {
@@ -102,9 +101,9 @@
 		justify-content: center;
 	}
 	#PlaylistStatForm {
-		width: 90%;
-		margin-top: 60px;
-		position: absolute;
+		width:      90%;
+		margin-top: 30px;
+		position:   absolute;
 	}
 	#URLInput {width: 80%;}
 	#submit {
@@ -125,23 +124,362 @@
 		background-color: #EECCFF;
 		color:            #430487;
 	}
-	.formCol {
-		margin-top: 25px;
+	.singleWordHolder {
+		margin-top: 20px;
+	}
+	.formCol  {
+		margin-top: -15px;
+		
+		display: inline-block;
+		
+		color: #1D0933;
+	}
+	#col1     {margin-right: 12%;}
+	#col2     {margin-right: 12%;}
+	.topRow   {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
 		
 		display: inline-block;
 	}
-	#col1 {margin-right: 12%;}
-	#col2 {margin-right: 12%;}
-	.topRow {margin-bottom: 10px;}
 
 	/* Playlist Output Section */
-	#songOutput {}
-	.docFormat {}
+	#songOutput {		
+		width:   100%;
+		display: block;
+		
+		position: relative;
+	}	
+	#songTable {		
+		width:   100%;
+		display: inline-block;
+		
+		position: relative;
+	}
+	
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+
+	.docFormat  {}
 }
 
-@media (min-width: 880px) and (max-width: 1025px) {
+@media (min-width: 940px) and (max-width: 1120px) {
 	/* Body */
 	body {
+		margin-top:    0px;
+		margin-bottom: 0px;
+		margin-left:   0px;
+		margin-right:  0px;
+		
+		font-family: monospace, "Monaco";
+		font:        normal;
+		font-style:  normal;
+		font-weight: 200;
+	
+		background-color: #1D0933;
+	}
+	.container {
+		width:        90%;
+		margin-left:  auto;
+		margin-right: auto;
+			}
+	#fullcontainer {}
+
+	/* Header and Footer Text */
+	header {
+		height: 50px;
+		width:  100%;
+	
+		background-color: #1D0933;
+	}
+	.icontext {
+		margin-right: 15px;
+		
+		text-align:  right;
+		line-height: 48px;
+	
+		color: #D4B8F2;
+	}
+
+	.vertsect {
+		width: 100%;
+		
+		display: flex;
+	}
+	
+	/* User Information Section */
+	#userInfo {
+		height: 200px;
+		
+		background-color: #aa00aa;
+	}
+	.horzsect {
+		height: 100%;
+		width:  50%;
+		
+		display: inline-block;
+	}
+
+	#siteInfo {
+		margin-right: 0px;
+		position:     relative;
+		
+		display:         flex; 
+		justify-content: center;
+		box-sizing:      border-box;
+		
+		background-color: #1D0933;
+		
+		border-top:    #D4B8F2 10px solid;
+		border-bottom: #D4B8F2 10px solid;
+		border-right:  #D4B8F2 10px solid;
+		border-left:   #D4B8F2 10px solid;
+	}
+	#descHeader {
+		margin-top: 30px;
+		position: absolute;
+		
+		color: #D4B8F2;
+	}
+	.descHolder {
+		margin-top: 60px;
+		position:   absolute;
+	}
+	.descBody {
+		position: relative;
+		
+		color: #D4B8F2;
+	}
+	#line2 {margin-top: -15px;}
+	#line3 {margin-top: -15px;}
+	
+	/* Playlist information form */
+	#includeText{margin-top: -4%}
+	#playlistSpecs {
+		margin-left: 0px;
+		position:    relative;
+		
+		background-color: #D4B8F2;
+		
+		display:         flex;
+		justify-content: center;
+	}
+	#PlaylistStatForm {
+		width:      90%;
+		margin-top: 30px;
+		position:   absolute;
+	}
+	#URLInput {width: 95%;}
+	#submit {
+		width: 65px;
+		margin-left: 40%;
+		margin-top:  2%;
+		
+		background-color: #1D0933;
+		color:            #D4B8F2;
+	}
+	#submit:hover {
+		width: 65px;
+		margin-left: 40%;
+		margin-top: 2%;
+		
+		background-color: #430487;
+		color:            #EECCFF;
+	}
+	#submit:active {
+		width: 65px;
+		margin-left: 40%;
+		margin-top: 2%;
+		
+		background-color: #EECCFF;
+		color:            #430487;
+	}
+	.singleWordHolder {
+		margin-top: 20px;
+	}
+	.formCol  {
+		margin-top: -15px;
+		
+		display: inline-block;
+		
+		color: #1D0933;
+	}
+	#col1     {margin-right: 5%;}
+	#col2     {margin-right: 5%;}
+	.topRow   {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		margin-top: 10px;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
+
+	/* Playlist Output Section */
+	#songOutput {		
+		width:   100%;
+		display: block;
+		
+		position: relative;
+	}
+	#songTable {		
+		width:   100%;
+		display: inline-block;
+		
+		position: relative;
+	}
+	
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+
+	.docFormat  {}
+	/* Body */
+/*	body {
 		font-family: monospace, "Monaco";
 		font:        normal;
 		font-style:  normal;
@@ -161,8 +499,12 @@
 		
 		background-color: #FFFFFF;
 	}
+	#fullcontainer {
+		background-color:#00ff00;
+	}
 	
 	/* Header and Footer Text */
+	/*
 	header {
 		height:	50px;
 		width:  100%;
@@ -184,6 +526,7 @@
 		display: flex;
 	}
 	/* User Tnformation Section	*/
+	/*
 	#userInfo {
 		height: 200px;
 		
@@ -230,6 +573,7 @@
 	#line3 {margin-top: -15px;}
 	
 	/* Playlist Information Form */
+	/*
 	#playlistSpecs {
 		margin-left: 0px;
 		position:    relative;
@@ -241,7 +585,7 @@
 	}
 	#PlaylistStatForm {
 		width:      90%;
-		margin-top: 60px;
+		margin-top: 30px;
 		position:   absolute;
 	}
 	#URLInput {width: 75%;}
@@ -264,20 +608,116 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 25px;
+		margin-top: -15px;
 		
 		display: inline-block;
 	}
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
 	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: 5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist output section */
-	#songOutput {}
-	.docFormat {}
+	/*
+	#songOutput {
+		width:   100%;
+		display: inline-block;
+		
+		position: relative;
+		
+		background-color: #0000ff;
+	}
+	#songTable {
+		width:   100%;
+		display: inline-block;
+		
+		position: relative;
+	}
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	
+	.docFormat {background-color:#ff0000;}
+	*/
 }
 
-@media (min-width: 690px) and (max-width: 880px) {
+@media (min-width: 690px) and (max-width: 940px) {
 	/* Body */
 	body {
 		font-family: monospace, "Monaco";
@@ -319,6 +759,8 @@
 	.vertsect {
 		width:   100%;
 		display: block;
+		
+		position: relative;
 	}
 	/*	User Information Section	*/
 	#userInfo {
@@ -375,10 +817,10 @@
 		justify-content: center;
 		
 		background-color: #D4B8F2;
-}
+	}
 	#PlaylistStatForm {
 		width: 		90%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 85%;}
@@ -401,15 +843,107 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 15px;
+		margin-top: -15px;
 		display:    inline-block;
 	}
-	#col1 {margin-right: 15%;}
-	#col2 {margin-right: 5%;}
-	.topRow {margin-bottom: 10px;}
+	#col1 {margin-right: 10%;}
+	#col2 {margin-right: 10%;}
+	.topRow {margin-bottom: 5px;}
+	.dropdown {
+		margin-top: -5px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
-	#songOutput {}
+	#songOutput {
+		width:   100%;
+		display: block;
+		
+		position: relative;
+	}
+	#songTable {
+		width:    100%;
+		display:  block;
+		
+		position: relative;
+	}
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	
 	.docFormat {}
 }
 
@@ -505,7 +1039,7 @@
 	#line3 {margin-top: -15px;}
 	
 	#playlistSpecs {
-		height:      150px;
+		height:      180px;
 		margin-left: 0px;
 		position:    relative;
 			
@@ -516,40 +1050,143 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 		
 	}
-	#URLInput {width: 75%;}
+	#URLInput {width: 95%;}
 	#submit {
 		width: 65px;
+		margin-left: 40%;
+		margin-top:  5px;
 		
 		background-color: #1D0933;
 		color:            #D4B8F2;
 	}
 	#submit:hover {
 		width: 65px;
+		margin-left: 40%;
+		margin-top:  5px;
 		
 		background-color: #430487;
 		color:            #EECCFF;
 	}
 	#submit:active {
 		width: 65px;
+		margin-left: 40%;
+		margin-top:  5px;
 		
 		background-color: #EECCFF;
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 15px;
+		margin-top: -15px;
 
 		display: inline-block;
 	}
-	#col1 {margin-right: 5%;}
-	#col2 {margin-right: 5%;}
+	#col1 {margin-left: -10%;}
+	#col2 {margin-left:   1%;}
+	#col3 {margin-left:   1%;}
 	.topRow {margin-bottom: 10px;}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		margin-top: 10px;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
-	#songOutput {}
+	#songOutput {
+		width:   100%;
+		display: block;
+				
+		position: relative;
+	}
+	#songTable {
+		width:    100%;
+		display:  block;
+		
+		position: relative;
+	}
+	#outputKey {font-size: 12px;}
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+
+		font-size: 12px;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	
 	.docFormat {}
 }
 
@@ -646,7 +1283,7 @@
 	
 	#playlistSpecs {
 		margin-left: 0px;
-		height:      250px;
+		height:      230px;
 		position:    relative;
 		
 		display:         flex;
@@ -656,7 +1293,7 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 65%;}
@@ -679,15 +1316,114 @@
 		color:            #430487;
 	}
 	.formCol {
-		margin-top: 8px;
+		margin-top: 1px;
 		display: 	block;
 	}
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
-	.topRow { margin-bottom: 10px;}
+	.topRow { margin-bottom: 5px;}
+	.singleWordHolder{
+		margin-top:    -5px;
+		margin-bottom: -15px;
+	}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist Output Section */
-	#songOutput {}
+	#songOutput {
+		width:   100%;
+		display: block;
+				
+		position: relative;
+	}
+	#songTable {
+		width:    100%;
+		display:  block;
+		
+		position: relative;
+	}
+	#outputKey {font-size: 12px;}
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+
+		font-size: 12px;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	
 	.docFormat {}
 }
 
@@ -785,7 +1521,7 @@
 	
 	#playlistSpecs {
 		margin-left: 0px;
-		height:      250px;
+		height:      265px;
 		position:    relative;
 		
 		display:         flex;
@@ -795,7 +1531,7 @@
 	}
 	#PlaylistStatForm {
 		width:      70%;
-		margin-top: 30px;
+		margin-top: 10px;
 		position:   absolute;
 	}
 	#URLInput {width: 65%;}
@@ -825,8 +1561,107 @@
 	#col1 {margin-right: 5%;}
 	#col2 {margin-right: 5%;}
 	.topRow {margin-bottom: 10px;}
+	.singleWordHolder{
+		margin-top:    -5px;
+		margin-bottom: -15px;
+	}
+	.dropdown {
+		margin-top: -3px;
+		position:   absolute;
+	}
+	#sortText {
+		position: relative;
+		
+		display: inline-block;
+		
+		color: #000000;
+	}
+	#sortMenu {
+		width:    100px;
+		position: relative;
+		
+		display: inline-block;
+	}
 	
 	/* Playlist output section */
-	#songOutput {}
+	#songOutput {
+		width:   100%;
+		display: block;
+				
+		position: relative;
+	}
+	#songTable {
+		width:    100%;
+		display:  block;
+		
+		position: relative;
+	}
+	#outputKey {font-size: 10px;}
+	.songEntry {
+		min-height:  50px;
+		width:       100%;
+		display:     block;
+
+		font-size: 10px;
+		
+		position: relative;
+	}
+	.songNum   {
+		width:       3%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTit   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+
+		position: absolute;
+	}
+	.songArt   {
+		width:       6%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songAlb   {
+		width:       10%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songLen   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songExp   {
+		width: 		 5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songTrk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	.songDsk   {
+		width:       5%;
+		margin-left: auto;
+		display:     block;
+		
+		position: absolute;
+	}
+	
 	.docFormat {}
 };
